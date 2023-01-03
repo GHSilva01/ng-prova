@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="title">
+    <div class="d-flex justify-content-between">
+      <h1>Meus Produtos.</h1>
+      <button class="btn btn-color" (click)="openModalProductForm()">Adicionar Produto</button>
+    </div>
+    <hr />
+    <div class="product-list">
+      <div class="card pt-2 " *ngFor="let product of products$ | async">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div ngbDropdown class="d-inline-block d-flex flex-row-reverse">
+                <button type="button" class="btn btn-outline-purple" ngbDropdownToggle>
+                </button>
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                  <button ngbDropdownItem (click)="openModalProductForm(product)">Editar</button>
+                  <button ngbDropdownItem>Excluir</button>
+                </div>
+              </div>
+            </div>
+          <div>
+          <img class="d-flex w-100 flex-column justify-content-center align-items-center" [src]="product.imgs[0]" alt="imagem" />
+          <h1 class="mt-2">{{ product.name }}</h1>
+          <p>{{ product.description }}</p>
+          <h1>R$ {{ product.price }}</h1>
+          <button class="tag-btn" *ngFor="let tag of product.tags">{{ tag }}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

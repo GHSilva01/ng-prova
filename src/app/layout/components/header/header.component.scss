@@ -1,0 +1,56 @@
+.header {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 6px #A8A8A829;
+    opacity: 1;
+}
+
+.logo {
+    height: 43px;
+    margin-left: 20px;
+
+}
+
+.profile {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #725172;
+    border-radius: 9px;
+    margin-right: 10px;
+
+}
+
+.divider {
+    width: 1px;
+    margin: auto 17px;
+    height: 45px;
+    border-right: 2px solid #DFE0EB;
+}
+
+.nav-menu {
+    ul {
+        list-style-type: none;
+        margin: 0;
+
+        li {
+            display: inline;
+            font-size: 16px;
+            margin-left: 20px;
+            padding: 10px;
+            position: relative;
+
+            a {
+                color: black;
+                text-decoration: none;
+                
+            }
+              a:hover, a.activated {
+                    font-weight: bold;
+                    width: 100%;
+                    bottom: -23px;
+                    border-bottom: solid #725172;
+
+
+              }
+        }
+    }
+}

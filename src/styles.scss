@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+@import "bootstrap/scss/bootstrap";
+@import 'ngx-toastr/toastr';
+@import url("https://p.typekit.net/p.css?s=1&k=hzy7zyt&ht=tk&f=139.169.173.175.176.25136&a=44792538&app=typekit&e=css");
+
+
+html, body { height: 100%; }
+.btn-color{
+    border-color: #725172 !important;
+    background-color: #725172 !important;
+    color: #fff !important;
+}
+body {
+    background-color: #F4F4F4!important;
+    font-family: normal normal bold 26px/32px "proxima-nova";
+
+}
+.ng-touched.ng-invalid {
+    @extend .is-invalid;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

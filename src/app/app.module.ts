@@ -6,7 +6,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
-
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
     declarations: [
@@ -21,6 +22,8 @@ import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
         ToastrModule.forRoot(),
         ReactiveFormsModule,
         NgbModalModule,
+        MatFormFieldModule,
+        MatInputModule
     ]
 })
 export class AppModule { }

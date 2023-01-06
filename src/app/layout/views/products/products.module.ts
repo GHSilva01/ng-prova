@@ -7,7 +7,11 @@ import { ProductsService } from './services/products.service';
 import { ProductFormModalComponent } from './components/product-form-modal/product-form-modal.component';
 import { ProductDeleteModalComponent } from './components/product-delete-modal/product-delete-modal.component';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import { MatCardModule } from '@angular/material/card';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -21,6 +25,11 @@ import { ReactiveFormsModule } from '@angular/forms';
     NgbModalModule,
     ReactiveFormsModule,
     NgbDropdownModule,
+    MatCardModule,
+    MatMenuModule,
+    MatIconModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [
     ProductsService

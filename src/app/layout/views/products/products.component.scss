@@ -12,26 +12,59 @@ hr {
   background-color: #070707;
 }
 
-.card {
-  h1 {
-    font-size: 15px;
+.tag-btn {
+  height: 28px;
+  border: 2px solid #725172;
+  border-radius: 30px;
+  font-size: bold;
+  background-color: white;
+  color: #725172;
+  padding: 2px 15px;
+  margin: 5px;
+}
+
+.example-card {
+  max-width: 250px;
+  border-radius: 10px;
+  border: #fff;
+  img {
+    object-fit: cover;
+    width: 220px;
+    height: 140px;
+  }
+  .font {
+    font-weight: bold;
+    font-size: medium;
+  }
+  .font-price {
+    font-weight: bold;
+    font-size: medium;
+  }
+  hr {
+    background-color: white;
   }
 }
 
-.tag-btn {
-  height: 28px;
-  border: 1px solid #725172;
-  border-radius: 30px;
-  font-size: 14px;
-  background-color: white;
-  color: #725172;
-  padding: 0px 15px;
-  margin-bottom: 10px;
+.btn-menu {
+  position: absolute;
+  margin-left: 200px;
+  margin-top: 10px;
+  color: #c9c9c9;
 }
 
-.product-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  gap: 10px;
+.btn-edit {
+  border-color: #725172 !important;
+  background-color: #725172 !important;
+  color: #fff !important;
+  width: 30px;
+  height: 30px;
+  padding: 2px 3px;
 }
-
+.btn-delete {
+  border-color: #725172 !important;
+  background-color: #ae1d00 !important;
+  color: #fff !important;
+  width: 30px;
+  height: 30px;
+  padding: 2px 3px;
+}

@@ -1,29 +1,33 @@
 <form class="p-3" [formGroup]="productForm" (ngSubmit)="onSubmit()">
     <h1 class="title">{{ isEditedMode ? 'Editar Produto' : 'Novo Produto' }}</h1>
-  <div>
-    <label></label>
-    <input placeholder="Nome" class="form-control" type="text" formControlName="name"/>
-  </div>
-  <div>
-    <label></label>
-    <input placeholder="Descrição" class="form-control" type="text" formControlName="description"/>
-  </div>
+    <mat-form-field appearance="outline">
+      <mat-label>Nome</mat-label>
+      <input matInput formControlName="name" type="text" class="form-control"/>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Descrição</mat-label>
+      <input matInput formControlName="description" type="text" class="form-control"/>
+    </mat-form-field>
   <div class="row">
   <div class="col-6">
-    <label></label>
-    <input placeholder="Preço" class="form-control" type="number" formControlName="price"/>
+    <mat-form-field appearance="outline">
+      <mat-label>Preço</mat-label>
+      <input matInput formControlName="price" type="number" class="form-control"/>
+    </mat-form-field>
   </div>
   <div class="col-6">
-    <label></label>
-    <input placeholder="Data da Remessa" class="form-control" type="date" formControlName="date"/>
+    <mat-form-field appearance="outline">
+      <mat-label>Data</mat-label>
+      <input matInput formControlName="date" type="date" class="form-control"/>
+    </mat-form-field>
   </div>
 </div>
-<div>
-  <label></label>
-  <input placeholder="Categorias, separe as por vírgulas" class="form-control" type="text" formControlName="tags"/>
-</div>
-  <div class="mt-4 p-2 mr-3 d-flex flex-row-reverse">
-    <button class="cancel" (click)="onCancel()">Cancelar</button>
+<mat-form-field appearance="outline">
+  <mat-label>Categorias (Separe-as por vírgulas)</mat-label>
+  <input matInput formControlName="price" type="text" class="form-control"/>
+</mat-form-field>
+  <div class="d-flex flex-row-reverse">
+    <button class="btn cancel" (click)="onCancel()">Cancelar</button>
     <button class="btn mr-3" type="submit" >Enviar</button>
   </div>
 </form>

@@ -1,20 +1,19 @@
-<div class="login banner">
+<div class="login banner d-flex">
   <div class="white-container h-100 d-flex">
     <form [formGroup]="loginForm" class="form-box" (ngSubmit)="onSubmit()">
-      <div class="input">
+      <div class="input-type col-6">
         <h1>Entre.</h1>
         <hr />
-        <label></label>
-        <input class="form-control" formControlName="name" type="text" placeholder="Nome"/>
-        <label></label>
-        <input class="form-control"formControlName="password" type="password" placeholder="Senha"/>
-      </div>
-      <div>
-        <button type="submit" class="btn btn-color mt-5">
-          <strong>ENTRAR</strong>
-        </button>
+        <mat-form-field appearance="outline">
+          <mat-label>Nome</mat-label>
+          <input matInput formControlName="name" type="text" />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Senha</mat-label>
+          <input matInput formControlName="password" type="password" />
+        </mat-form-field>
+        <button type="submit" class="btn btn-color">Entrar</button>
       </div>
     </form>
   </div>
 </div>
-

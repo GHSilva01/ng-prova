@@ -11,8 +11,11 @@
 
 .cancel {
     border-color: #725172 !important;
-    border-radius: 10px;
-    background-color: white;
-    color: #725172;
+    background-color: white!important;
+    color:  #725172 !important;
     margin-left: 10px;
 }
+
+mat-form-field {
+    width: 100%;
+  }
